@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Divya Dharshini — Resume</title>
+  <style>
+    :root{
+      --accent:#0f172a; /* deep navy */
+      --muted:#64748b;
+      --primary:#2563eb; /* blue pills */
+      --card:#ffffff;
+      --bg: linear-gradient(90deg,#e0f2fe 0%,#f8fafc 100%);
+      --radius:12px;
+      --maxw:960px;
+      --sans: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial;
+    }
+    html,body{height:100%;margin:0;font-family:var(--sans);background:var(--bg);color:#0b1220}
+    header{display:none} /* hidden on screen, shown for print via @media print */
+    .wrap{max-width:var(--maxw);margin:28px auto;padding:18px}
+    .card{display:flex;gap:0;background:var(--card);box-shadow:0 8px 28px rgba(2,6,23,0.08);border-radius:var(--radius);overflow:hidden}
+
+    /* Left sidebar */
+    .sidebar{width:34%;background:var(--accent);color:#fff;padding:30px 22px;box-sizing:border-box}
+    .photo{width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid rgba(255,255,255,0.14);display:block;margin:6px auto}
+    .name{margin:12px 0 4px;text-align:center;font-size:20px;font-weight:700}
+    .title{font-size:13px;text-align:center;color:rgba(255,255,255,0.85);margin:0 0 14px}
+    .contact p{margin:8px 0;font-size:14px}
+    .contact a{color:#fff;text-decoration:none}
+    .section{margin-top:20px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.06)}
+    .section h3{color:#fff;margin:0 0 8px;font-size:14px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:var(--primary);color:#fff;padding:6px 8px;border-radius:6px;font-size:13px}
+
+    /* Right content */
+    .content{width:66%;padding:28px 30px}
+    .header-row{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+    .content h1{margin:0;font-size:24px;color:var(--accent);text-align:center;font-weight:700}
+    .header-row{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-direction:column;border-bottom:1px solid #e6eef6;padding-bottom:12px}
+    .content h4{margin:6px 0 0;color:var(--muted);font-weight:500}
+    .block{margin-top:18px;padding-bottom:12px;border-bottom:1px solid #e6eef6}
+    .block:last-child{border-bottom:none;padding-bottom:0}
+    .block h3{margin:0 0 8px;color:var(--accent);font-size:15px}
+    .block p, .block li{color:#163142;font-size:14px;line-height:1.5}
+    ul{margin:8px 0 0;padding-left:18px}
+
+    /* always keep two-column layout on all devices */
+    @media (max-width:600px){
+      .wrap{margin:16px auto;padding:12px}
+      .sidebar{padding:18px 12px}
+      .content{padding:16px 12px}
+      .content h1{font-size:18px}
+      .content h4{font-size:13px}
+      .section h3{font-size:12px}
+      .block h3{font-size:13px}
+      .block p, .block li{font-size:13px}
+      .contact p{font-size:13px}
+      .skill{padding:4px 6px;font-size:12px}
+      .photo{width:90px;height:90px}
+      button{padding:5px 10px;font-size:13px}
+    }
+
+    /* print-friendly header repeat */
+    @media print{
+      header{position:fixed;top:0;left:0;right:0;background:var(--accent);color:#fff;padding:10px 0}
+      body{margin-top:86px}
+      .wrap{box-shadow:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="max-width:var(--maxw);margin:0 auto;padding:6px 18px;color:#fff;display:flex;justify-content:space-between;align-items:center;">
+      <div style="font-weight:700">Divya Dharshini</div>
+      <div style="color:rgba(255,255,255,0.85)">IT Fresher | Web & Mobile Application Developer</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div style="text-align:right;margin-bottom:8px;">
+      <button onclick="window.print()" style="padding:6px 12px;font-size:14px;border:none;background:#2563eb;color:#fff;border-radius:6px;cursor:pointer">Download PDF</button>
+    </div>
+    <div class="card">
+      <aside class="sidebar">
+        <img src="Photo.jpeg" alt="Photo of Divya Dharshini" class="photo">
+        <div class="name">Divya Dharshini</div>
+        <div class="title">IT Fresher</div>
+
+        <div class="contact section">
+          <h3>Contact</h3>
+          <p>📞 9843937555</p>
+          <p>📧 <a href="mailto:ddcdivya@gmail.com">ddcdivya@gmail.com</a></p>
+          <p>📍 Tamil Nadu, India</p>
+          <p>🔗 <a href="https://github.com/divyadharshini-001">github.com/divyadharshini-001</a></p>
+          <p>🔗 <a href="https://www.linkedin.com/in/divya-dharshini-b2937b20a">linkedin.com/in/divya-dharshini-b2937b20a</a></p>
+        </div>
+
+        <div class="section">
+          <h3>Technical Skills</h3>
+          <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React Native</div>
+            <div class="skill">PHP</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Java</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Strengths</h3>
+          <ul>
+            <li>Quick learner & problem solver</li>
+            <li>Team player with good communication</li>
+            <li>Adaptable to new technologies</li>
+          </ul>
+        </div>
+
+
+        <div class="section">
+          <h3>Languages</h3>
+          <p>• Tamil <br>
+            • English</p>
+        </div>
+      </aside>
+      <section class="content">
+        <div class="header-row">
+          <div>
+            <h1>DIVYA DHARSHINI A</h1>
+            <h4>Web & Application Developer</h4>
+          </div>
+        </div>
+        <div class="block">
+          <h3>Career Objective</h3>
+          <p>Results-driven IT graduate with hands-on experience in front-end and mobile development. Adept at React Native, JavaScript, PHP and MySQL, with a strong foundation in building responsive and user-friendly applications. Seeking an entry-level developer position where I can contribute to impactful projects, collaborate with seasoned professionals, and continuously grow my technical expertise.</p>
+        </div>
+        <div class="block">
+          <h3>Education</h3>
+          <ul>
+            <li><strong>B.E.ECE</strong> — Dr.NGP INSTITUTE OF TECHNOLOGY (2023). CGPA: 7.9</li>
+            <li><strong>HSC</strong> (2017) — 86%</li>
+            <li><strong>SSLC</strong> (2019) — 58%</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h3>Projects</h3>
+          <p><strong>Home Automation and security system</strong> - Developed a Home Automation and Security System to control electrical devices and monitor security using smart technology.</p>
+          <p><strong>Employee Management System</strong> - JavaScript app managing employee data with array methods and dynamic UI.</p>
+          <p><strong>Event Registration Form</strong> - Responsive form with validation using HTML, CSS.</p>
+          <p><strong>React Native App</strong> - Mobile UI built with reusable components, navigation and responsive design.</p>
+        </div>
+
+        <div class="block">
+          <h3>Certifications & Learning</h3>
+          <ul>
+            <li>Fullstack web Development — TN Skills</li>
+            <li>Python Basics</li>
+            <li>MATLAB ONRAMP</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h3>Declaration</h3>
+          <p>I hereby declare that the information given above is true to the best of my knowledge.</p>
+        </div>
+
+      </section>
+    </div>
+  </main>
+</body>
+</html>
